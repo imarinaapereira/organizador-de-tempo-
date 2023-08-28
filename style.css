@@ -130,7 +130,6 @@ button {
   .container {
     width: 70%;
     font-size: 85%;
-    padding: 30px 4.5rem;
   }
 
   button {
@@ -141,6 +140,7 @@ button {
     width: 70%;
     min-height: 21rem;
     margin-bottom: 10px;
+    padding: 30px 6rem;
   }
 }
 

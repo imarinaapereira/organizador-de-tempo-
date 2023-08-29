@@ -144,10 +144,24 @@ button {
   }
 }
 
+@media screen and (max-width:380px) {
+  .container {
+    width: 75%;
+    font-size: 85%;
+  }
+
+  .resultado {
+    width: 75%;
+    min-height: 18rem;
+    margin-bottom: 10px;
+    padding: 30px 3rem;
+  }
+}
+
 @media screen and (max-width:330px) {
   .container {
-    width: 80%;
-    font-size: 70%;
+    width: 90%;
+    font-size: 65%;
   }
 
   button {
@@ -155,8 +169,9 @@ button {
   }
 
   .resultado {
-    width: 80%;
+    width: 90%;
     min-height: 18rem;
     margin-bottom: 10px;
+    padding: 30px 0rem;
   }
 }

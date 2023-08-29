@@ -22,8 +22,8 @@ function SepararPrincipaisTarefas() {
 
   removerResultadosAnteriores()
   let dorme = document.querySelector("#dorme").value;
-  let tarefas = document.querySelector("#tarefas").value;
-  let principaisTarefas = document.querySelector("#principaisTarefas").value;
+  let tarefas = document.querySelector("#tarefas").value.toUpperCase();
+  let principaisTarefas = document.querySelector("#principaisTarefas").value.toUpperCase();
 
   // Validar os campos
   if (dorme === '' || tarefas === '' || principaisTarefas === '') {

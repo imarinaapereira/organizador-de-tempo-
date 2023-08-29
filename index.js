@@ -47,8 +47,7 @@ function SepararPrincipaisTarefas() {
   let tempoPorTarefaNaoPrincipal = tempoDisponivelNaoPrincipais / numeroTarefasNaoPrincipais;
   // Calcular o tempo para cada tarefa não principal dividindo pelo número de tarefas
   let horas = Math.floor(tempoPorTarefaNaoPrincipal); // Parte inteira (horas)
-  let minutos = (tempoPorTarefaNaoPrincipal - horas) * 60;
-
+  let minutos = Math.round((tempoPorTarefaNaoPrincipal - horas) * 60);
   tempoPorTarefaNaoPrincipal = `${horas} horas ${minutos} minutos`;
   // Imprimir o resultado para cada tarefa
   let trabalha = document.querySelector('#trabalha').value

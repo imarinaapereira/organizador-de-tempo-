@@ -33,8 +33,8 @@ function SepararPrincipaisTarefas() {
   }
 
   // Separar e formatar os valores em arrays
-  let arrayDeTarefas = tarefas.split(',').map(tarefa => tarefa.trim().toLowerCase());
-  let arrayDePrincipaisTarefas = principaisTarefas.split(',').map(tarefa => tarefa.trim().toLowerCase());
+  let arrayDeTarefas = tarefas.split(/,| e | E /).map(tarefa => tarefa.trim().toLowerCase())
+  let arrayDePrincipaisTarefas = principaisTarefas.split(/,| e | E /).map(tarefa => tarefa.trim().toLowerCase());
 
   // Imprimir o resultado no console
   let novoArray = filtrarElementosIguais(arrayDeTarefas, arrayDePrincipaisTarefas);
